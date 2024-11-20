@@ -1,0 +1,29 @@
+{
+  "name": "sx-remote-server",
+  "version": "1.0.0",
+  "private": "true",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": "https://github.com/Fozilbek-Raimberdiyev/sx-remote-server.git",
+  "author": "fl_raimberdiyev <fl.raimberdiyev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.1",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  }
+}
