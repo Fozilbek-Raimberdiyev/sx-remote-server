@@ -7,23 +7,51 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "nodemon src/index.ts"
+    "dev": "bun run src/server/index.ts",
+    "dev:client": "vite"
   },
   "repository": "https://github.com/Fozilbek-Raimberdiyev/sx-remote-server.git",
   "author": "fl_raimberdiyev <fl.raimberdiyev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@antfu/eslint-config": "^3.9.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.9.1",
+    "@types/nodemailer": "^6.4.17",
     "@vitejs/plugin-vue": "^5.2.0",
+    "@vue/compiler-sfc": "^3.5.13",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
     "nodemon": "^3.1.7",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vue-tsc": "^2.1.10"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tanstack/vue-query": "^5.60.6",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "nodemailer": "^6.9.16",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true
   }
 }
